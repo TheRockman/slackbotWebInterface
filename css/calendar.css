@@ -1,0 +1,59 @@
+.container {
+    height: auto;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+.calendar {
+    display: block;
+}
+.calendar-day {
+    background-color: #fff;
+    padding: 2px 8px;
+    width: 8.6599%;
+    line-height: 2px;
+    margin: 1%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border: solid 1px #fff;
+}
+.calendar-day:hover {
+    background: #eee;
+}
+.calendar-day:focus {
+    background: #2196F3;
+}
+.controls {
+    display: block;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.today {
+    font-weight: bold;
+    color:white;
+    background: #2196F3;
+}
+.label {
+    background-color: #fff;
+    padding: 20px;
+    line-height: 2px;
+    margin: 1%;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border: solid 1px #fff;
+}
+.previous {
+    float: left;
+}
+.next {
+    float: right;
+}
+.label i {
+    line-height: 0;
+}
+}
