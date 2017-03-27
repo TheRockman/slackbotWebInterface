@@ -1,0 +1,108 @@
+:root{
+--animation: all 0.3s cubic-bezier(.25,.8,.25,1);
+--spacer: 1rem;
+--level1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+--level2: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/*Slant*/
+/*
+clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+*/
+
+body{
+background: url('http://trickvilla.com/wp-content/uploads/Wood-Backgrounds-Picture.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto.eot');
+  src: url('roboto.eot?#iefix') format('embedded-opentype'),
+  url('roboto.woff') format('woff'),
+  url('roboto.ttf')  format('truetype'),
+  url('roboto.svg#svgFontName') format('svg');
+}
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+/*card*/
+.card {
+  background: #fff;
+  border-radius: 2px;
+  margin: var(--spacer);
+  padding: var(--spacer);
+  box-shadow: var(--level1);
+  transition: var(--animation);
+}
+
+/* http://codepen.io/taniarascia/pen/rOLEGe - Easiest flex grid ever*/
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex {
+  flex-basis: 100%;
+}
+@media screen and (min-width: 800px) {
+  .flex {
+    flex: 1;
+  }
+}
+
+.center{
+  text-align: center;
+}
+
+b{
+  font-size: 150%;
+}
+
+input{
+  width: 100%;
+  outline:none;
+  border:none;
+  border-bottom: 1px solid #cacaca;
+  margin: var(--spacer) 0;
+  padding:0.5rem;
+}
+
+button{
+  border:none;
+  outline:none;
+  background:tomato;
+  border-radius:2px;
+  padding: 0.5rem var(--spacer);
+}
+
+.btn {
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.blue {
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+.blue:hover {
+  background-color: #6FC6FF;
+}
